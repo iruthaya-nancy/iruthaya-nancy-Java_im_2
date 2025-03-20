@@ -18,6 +18,6 @@ public class Lab {
         return "Hello world!";
     }
     public String sayHello2(){
-        return "change world!";
+        return "change goood!";
     }
 }
