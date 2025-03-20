@@ -1,10 +1,5 @@
-mkdir -p .vscode
-cat <<EOF >.vscode/settings.json
-{
-    "extensions.ignoreRecommendations": true
-}
-EOF
-cat <<EOF >.git/hooks/post-commit
+cat << 'EOF' > .git/hooks/post-commit
+#!/bin/bash
 git push
 git log -1 --shortstat > history_log.txt
 EOF
